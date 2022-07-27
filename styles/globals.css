@@ -15,6 +15,60 @@ a {
   box-sizing: border-box;
 }
 
+#test path:nth-child(1) {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: line 2s ease forwards;
+}
+
+#test path:nth-child(2) {
+  stroke-dasharray: 1190;
+  stroke-dashoffset: 1190;
+  animation: line 3s ease forwards;
+}
+
+#test path:nth-child(3) {
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  animation: line 3.2s ease forwards;
+}
+
+#test path:nth-child(4) {
+  stroke-dasharray: 635;
+  stroke-dashoffset: 635;
+  animation: line 3.4s ease forwards;
+}
+
+#test path:nth-child(5) {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  animation: line 2.4s ease forwards;
+}
+
+#test path:nth-child(6) {
+  stroke-dasharray: 635;
+  stroke-dashoffset: 635;
+  animation: line 4s ease forwards;
+}
+
+#test path:nth-child(7) {
+  stroke-dasharray: 604;
+  stroke-dashoffset: 604;
+  animation: line 4.8s ease forwards;
+}
+
+#test path:nth-child(8) {
+  stroke-dasharray: 463;
+  stroke-dashoffset: 463;
+  animation: line 4.8s ease forwards;
+}
+
+@keyframes line {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
